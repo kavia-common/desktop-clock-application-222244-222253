@@ -11,8 +11,14 @@ How to run the Tkinter app:
 2) Navigate to the Tkinter app folder:
    cd desktop-clock-application-222244-222253/tkinter_native_app
 3) Run:
-   python3 main.py
+   ./run.sh
    - The window titled "Ocean Clock" will open, showing the time in HH:MM:SS with a smooth update using after().
+
+CI/Headless:
+- To avoid failures in CI without a DISPLAY, use:
+  HEALTHCHECK_ONLY=1 ./entrypoint.sh
+- To enforce GUI success (if a virtual display like Xvfb is provided), use:
+  STRICT_GUI=1 ./entrypoint.sh
 
 Notes:
 - No external dependencies are required.
