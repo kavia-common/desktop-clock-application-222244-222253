@@ -1,0 +1,4 @@
+{
+    "command": "cd build && ctest",
+    "working_directory": "/home/kavia/workspace/code-generation/desktop-clock-application-222244-222253/tkinter_native_app"
+}
